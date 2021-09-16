@@ -4,7 +4,8 @@
   "description": "Manage database connections in a Node.JS serverless environment.",
   "main": "build/serverless-db.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf ./build && tsc"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/marcesengel/serverless-db/issues"
   },
-  "homepage": "https://github.com/marcesengel/serverless-db#readme"
+  "homepage": "https://github.com/marcesengel/serverless-db#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.4.3"
+  }
 }
